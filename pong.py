@@ -76,7 +76,12 @@ def ball(x,y):
     global ball_image
     global should_move
     global ball_angle
-    
+    global ball_speedX
+    global ball_speedY
+    if ball_speedX>1.1:
+        ball_speedX =2
+    if ball_speedY>1.1:
+        ball_speedY=1.5
     if should_move == True:
         screen.blit(ball_image,(ballX,ballY))
         ballX += (speed_modifier)*(ball_speedX * (math.cos(ball_angle)))
