@@ -42,11 +42,11 @@ paddleX1 = 10
 paddleY1=250
 paddleX2 = 570
 paddleY2 = 250
-paddle_speed = 0.4
+paddle_speed = 0.35
 ball_speedX= random.choice([-1.00001, 1.00001])
 ball_speedY = 1.000001
 ball_angle = 0
-speed_modifier = 0.3
+speed_modifier = 0.2
 speed_modifier_max = 1
 end_screen = False
 def spawning_ball():
